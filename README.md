@@ -55,7 +55,7 @@ S-conLSH <PathOfSourceFiles> <ReferenceGenome> <ReadFile>  [-K concatenationFact
 ```
 ### Quick start
 ```
-The package includes sample reference genome and SMRT reads to demonstrate the quich start guide. 
+The package includes sample reference genome and SMRT reads to demonstrate the quick start guide. 
 
 ``` For alignment free mapping in PAF format
 
