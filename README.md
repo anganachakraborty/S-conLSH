@@ -6,9 +6,10 @@ Spaced-context based Locality Sensitive Hashing
 
 Spaced context based Locality Sensitive Hashing (S-conLSH) is a new mapper that facilitates gapped mapping of noisy long reads to the corresponding target locations of a reference genome, with multiple spaced patterns. We have examined the performance of the proposed method on 5 different real and simulated datasets.
 S-conLSH is at least 2 times faster than the state-of-the-art alignment-based methods. It achieves a sensitivity of 99%, without using any traditional base-to-base alignment, on human simulated sequence data. By default, S-conLSH provides an alignment-free mapping in PAF format. If a base level alignment is required, S-conLSH provides an option (--align 1) to generate alignment in SAM format using ksw library (https://github.com/attractivechaos/klib).
+Some portions of the package has been inherited from rHAT[1] and conLSH[2].
 
 
-S-conLSH is open source and free for non-commercial use.
+S-conLSH[3] is open source and free for non-commercial use.
 
 S-conLSH is designed by Angana Chakraborty in collaboration with Sanghamitra Bandyopadhyay, Indian Statistical Institute, Kolkata and Prof. Burkhard Morgenstern, University of Göttingen, Germany. 
 
@@ -68,9 +69,14 @@ The package includes sample reference genome and SMRT reads to demonstrate the q
 ```
 ### Reference
 
-rHAT: [1]Liu, B., Guan, D., Teng, M. & Wang, Y. rHAT: fast alignment of noisy long reads with regional hashing. 
+[1] rHAT: Liu, B., Guan, D., Teng, M. & Wang, Y. rHAT: fast alignment of noisy long reads with regional hashing. 
 Bioinformatics 32, 1625–1631 (2015).
-conLSH: [2]conLSH:Context based Locality Sensitive Hashing for Mapping of noisy SMRT Reads. Computational Biology and Chemistry, Elsevier [Accepted]
+
+[2] conLSH: conLSH:Context based Locality Sensitive Hashing for Mapping of noisy SMRT Reads. Computational Biology and Chemistry, Elsevier [Accepted]
+
+[3] S-conLSH: Alignment-free gapped mapping of noisy long reads
+Angana Chakraborty, Burkhard Morgenstern, Sanghamitra Bandyopadhyay
+bioRxiv 801118; doi: https://doi.org/10.1101/801118
 
 
 ### Contact
