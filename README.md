@@ -1,7 +1,7 @@
 # S-conLSH
 Spaced-context based Locality Sensitive Hashing
 
-###Introduction
+#ntroduction
 ```
 
 Spaced context based Locality Sensitive Hashing (S-conLSH) is a new mapper that facilitates gapped mapping of noisy long reads to the corresponding target locations of a reference genome, With multiple spaced patterns. We have examined the performance of the proposed method on 5 different real and simulated datasets.
@@ -13,7 +13,7 @@ S-conLSH is open source and free for non-commercial use.
 S-conLSH is designed by Angana Chakraborty in collaboration with Sanghamitra Bandyopadhyay, Indian Statistical Institute, Kolkata and Prof. Burkhard Morgenstern, University of Göttingen, Germany. 
 
 ---
-	
+```
 
 
 ###Installation
@@ -27,7 +27,7 @@ The makefile is attached. Use the make command for generating the executable fil
 The binary 'S-conLSH' performs indexing of the reference genome and then aligns the long and noisy PacBio reads to it.
 
 ---
-
+```
 ###Synopsis
 ```
 
