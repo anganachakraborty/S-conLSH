@@ -23,7 +23,7 @@ Current version of S-conLSH needs to be run on Linux operating system.
 
 The source code is written in C++. 
 
-The makefile is attached. Use the make command for generating the executable file.
+The makefile is attached. Use make command to generate the executables.
 The binary 'S-conLSH' performs indexing of the reference genome and then aligns the long and noisy PacBio reads to it.
 
 ---
