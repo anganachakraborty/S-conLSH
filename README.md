@@ -12,7 +12,6 @@ S-conLSH is open source and free for non-commercial use.
 
 S-conLSH is designed by Angana Chakraborty in collaboration with Sanghamitra Bandyopadhyay, Indian Statistical Institute, Kolkata and Prof. Burkhard Morgenstern, University of Göttingen, Germany. 
 
----
 
 
 
@@ -26,7 +25,6 @@ The source code is written in C++.
 The makefile is attached. Use make command to generate the executables.
 The binary 'S-conLSH' performs indexing of the reference genome and then aligns the long and noisy PacBio reads to it.
 
----
 ```
 ### Synopsis
 ```
@@ -34,7 +32,6 @@ The binary 'S-conLSH' performs indexing of the reference genome and then aligns 
 S-conLSH <PathOfSourceFiles> <ReferenceGenome> <ReadFile>  [-K concatenationFactor] [-L NumberOfHashTables] [--lambda contextFactor] [--zero spacesInPatterns] [-w windowsHits] [-m candidates] [-x match] [-y mismatch] [-q gapOpen] [-r gapExtension] [-a alignInSAM] > <OutputFile>
 
 
----
 ```
 ### Parameters (could be updated in the future for adding new functions)
 ```
@@ -49,13 +46,11 @@ S-conLSH <PathOfSourceFiles> <ReferenceGenome> <ReadFile>  [-K concatenationFact
 -y, --mismatch         <int>           Mismatch penalty for the alignments in extension phase [Default=5]
 -q, --gap-open         <int>           Gap open penalty for the alignments in extension phase [Default=2]
 -r, --gap-extension    <int>           Gap extension penalty for the alignments in extension phase [Default=1]
--a, --align	       <int>           Value=1, outputs alignment in SAM format [Default=0, Alignment Free PAF format output]
+-a, --align	       <int>           Value=1, outputs alignment in SAM format [Default=0, Alignment-free PAF format output]
 -h, --help                             Help
 -------------------------------------------------------------------------------------------------------
 
 
-
----
 ```
 ### Quick start
 ```
@@ -69,7 +64,6 @@ The package includes sample reference genome and SMRT reads to demonstrate the q
 
 ``` ./S-conLSH ../src/ ../sample_data/ecoli_AE005174v2.fas ../sample_data/SRR801638.fasta --align 1 > sample.sam
 
----
 
 ```
 ### Reference
@@ -78,7 +72,6 @@ rHAT: [1]Liu, B., Guan, D., Teng, M. & Wang, Y. rHAT: fast alignment of noisy lo
 Bioinformatics 32, 1625–1631 (2015).
 conLSH: [2]conLSH:Context based Locality Sensitive Hashing for Mapping of noisy SMRT Reads. Computational Biology and Chemistry, Elsevier [Accepted]
 
----
 
 ### Contact
 
