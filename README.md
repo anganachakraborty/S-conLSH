@@ -2,6 +2,7 @@
 Spaced-context based Locality Sensitive Hashing
 
 ###Introduction
+```
 
 Spaced context based Locality Sensitive Hashing (S-conLSH) is a new mapper that facilitates gapped mapping of noisy long reads to the corresponding target locations of a reference genome, With multiple spaced patterns. We have examined the performance of the proposed method on 5 different real and simulated datasets.
 S-conLSH is at least 2 times faster than the state-of-the-art alignment-based methods. It achieves a sensitivity of 99%, without using any traditional base-to-base alignment, on human simulated sequence data. By default, S-conLSH provides an alignment-free mapping in PAF format. If a base level alignment is required, S-conLSH provides an option (--align 1) to generate alignment in SAM format using ksw library (https://github.com/attractivechaos/klib).
@@ -16,6 +17,7 @@ S-conLSH is designed by Angana Chakraborty in collaboration with Sanghamitra Ban
 
 
 ###Installation
+```
 
 Current version of S-conLSH needs to be run on Linux operating system.
 
@@ -27,14 +29,15 @@ The binary 'S-conLSH' performs indexing of the reference genome and then aligns 
 ---
 
 ###Synopsis
-
+```
 
 S-conLSH <PathOfSourceFiles> <ReferenceGenome> <ReadFile>  [-K concatenationFactor] [-L NumberOfHashTables] [--lambda contextFactor] [--zero spacesInPatterns] [-w windowsHits] [-m candidates] [-x match] [-y mismatch] [-q gapOpen] [-r gapExtension] [-a alignInSAM] > <OutputFile>
 
 
 ---
-
+```
 ###Parameters (could be updated in the future for adding new functions)
+```
 ------------------------------------------------------------------------------------------------------
 -K, --K                <int>           Concatenation factor of locality sensitive hashing 
 -L, --L                <int>           Number of hash tables in conLSH framework
