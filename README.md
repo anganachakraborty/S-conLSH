@@ -37,10 +37,10 @@ S-conLSH <PathOfSourceFiles> <ReferenceGenome> <ReadFile>  [-K concatenationFact
 ### Parameters (could be updated in the future for adding new functions)
 ```
 ------------------------------------------------------------------------------------------------------
--K, --K                <int>           Concatenation factor of locality sensitive hashing 
--L, --L                <int>           Number of hash tables in conLSH framework
---lambda               <int>           The context factor
---zero                 <int>           The number of don't cares or zeros in the S-conLSH pattern 
+-K, --K                <int>           Concatenation factor of locality sensitive hashing [Default=2]
+-L, --L                <int>           Number of hash tables in conLSH framework [Default=2]
+--lambda               <int>           The context factor [Default=3]
+--zero                 <int>           The number of don't cares or zeros in the S-conLSH pattern [Default=5]
 -w, --window-hits      <int>           The max allowed number of windows hitting by a k-mer [Default=1000] 
 -m, --candidates       <int>           The number of candidates for extension [Default=400]
 -x, --match            <int>           Score of match for the alignments in extension phase [Default=2]
